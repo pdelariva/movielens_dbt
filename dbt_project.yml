@@ -33,4 +33,10 @@ models:
   movielens_dbt:
     # Config indicated by + and applies to all files under models/example/
     example:
+models:
+  movielens_dbt:
+    staging:
       +materialized: view
+
+    dim:
+      +materialized: table
