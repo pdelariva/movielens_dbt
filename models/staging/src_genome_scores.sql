@@ -6,4 +6,4 @@ SELECT
 movieId AS movie_id,
 tagId AS tag_id,
 relevance
-FROM raw_genome_scores
+FROM raw_genome_scores  
