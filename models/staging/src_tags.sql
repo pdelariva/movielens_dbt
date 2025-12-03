@@ -1,0 +1,10 @@
+with raw_tags AS (
+    SELECT * FROM MOVIELENS.raw.raw_tags
+)
+
+SELECT
+userID AS user_id,
+movieId AS movie_id,
+tag,
+TO_TIMESTAMP_LTZ(timestamp) AS tag_timestamp
+FROM raw_tags
